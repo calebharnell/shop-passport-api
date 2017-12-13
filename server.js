@@ -7,7 +7,7 @@ const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
 const { initialize, requireJWT, verifyAdmin } = require('./middleware/auth');
-const port = process.ENV.PORT || 7000;
+const port = process.env.PORT || 7000;
 
 const app = express();
 
